@@ -80,6 +80,6 @@ for PORT in $PORTLIST ; do
 done
 MEMORY="-m 4096m"
 LOCALHOST=`getMyIp`
-cmd="docker run -d -it -h $LOCALHOST $CONFIG --name=otter-all $VOLUMNS $NET_MODE $PORTS $MEMORY canal/otter-all"
+cmd="docker run -d -it -h $LOCALHOST $CONFIG --name=otter-all $VOLUMNS $NET_MODE $PORTS $MEMORY reg.cluster.local:8443/tools/otter:v4.2.18"
 echo $cmd
 eval $cmd
