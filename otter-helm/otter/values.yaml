@@ -1,0 +1,20 @@
+# Default values for otter.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+name: 'otter'
+namespace: 'maxbase-dev-springcloud-component'
+appVersion: 1.0.0
+admin:
+  image:
+    repository: 'reg.cluster.local:8443/tools/otter:v4.2.18'
+    version: '1.0.0'
+  container:
+    port: ''
+  service:
+    type: 'ClusterIP'
+    port: ''
+  dbinit: 'false'
+  volumes: 'demo-test'
+  nodePort: '30058'
