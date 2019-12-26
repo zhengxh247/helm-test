@@ -41,7 +41,7 @@ spec:
             claimName: {{ .Values.admin.volumes }}
       containers:
         - name: '{{ .Values.name }}-admin'
-          image: reg.cluster.local:8443/tools/otter:v4.2.18
+          image: canal/otter-all:v4.2.18
           ports:
             - name: http-11
               protocol: TCP
@@ -84,7 +84,7 @@ spec:
               cpu: 10m
               memory: 10Mi
           command:
-            - curl -fsSL run.sh | bash
+            - bash run.sh
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           imagePullPolicy: IfNotPresent
