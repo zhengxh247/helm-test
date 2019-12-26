@@ -31,7 +31,7 @@ spec:
         app.kubernetes.io/version: v1
         app.kubernetes.io/name: {{ .Values.name }}
       annotations:
-        kubesphere.io/containerSecrets: '{"{{ .Values.name }}-admin":"harbor","{{ .Values.name }}-front":"harbor"}'
+        kubesphere.io/containerSecrets: '{"{{ .Values.name }}-admin":"harbor"}'
         logging.kubesphere.io/logsidecar-config: '{}'
         sidecar.istio.io/inject: 'true'
     spec:
@@ -41,7 +41,7 @@ spec:
             claimName: {{ .Values.admin.volumes }}
       containers:
         - name: '{{ .Values.name }}-admin'
-          image: {{ .Values.admin.image.repository }}:{{ .Values.admin.image.version }}
+          image: reg.cluster.local:8443/tools/otter:v4.2.18
           ports:
             - name: http-11
               protocol: TCP
