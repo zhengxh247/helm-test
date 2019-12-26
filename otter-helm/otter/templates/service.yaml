@@ -130,23 +130,23 @@ spec:
       protocol: TCP
       port: 8080
       targetPort: 8080
-	- name: http-12
+    - name: http-12
       protocol: TCP
       port: 8081
-      targetPort: 8081
-	- name: http-13
+      targetPort: 8081 
+    - name: http-13
       protocol: TCP
       port: 2181
       targetPort: 2181
-	- name: http-14
+    - name: http-14
       protocol: TCP
       port: 2088
       targetPort: 2088
-	- name: http-15
+    - name: http-15
       protocol: TCP
       port: 2089
       targetPort: 2089
-	- name: http-16
+    - name: http-16
       protocol: TCP
       port: 2090
       targetPort: 2090
