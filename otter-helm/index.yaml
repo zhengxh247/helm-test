@@ -1,3 +1,13 @@
 apiVersion: v1
-entries: {}
-generated: "2019-12-26T13:55:10.493785479+08:00"
+entries:
+  otter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-12-26T14:21:39.311459449+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 37b0181ddcb301b6f6b963ce0713e9632383a1a2bde50f462c3da59ffbbb496a
+    name: otter
+    urls:
+    - otter-1.0.0.tgz
+    version: 1.0.0
+generated: "2019-12-26T14:21:39.310791847+08:00"
