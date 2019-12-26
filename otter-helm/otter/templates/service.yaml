@@ -47,11 +47,11 @@ spec:
               protocol: TCP
               containerPort: 8080
               servicePort: 8080
-	    - name: http-12
+            - name: http-12
               protocol: TCP
               containerPort: 8081
               servicePort: 8081
-	    - name: http-13
+            - name: http-13
               protocol: TCP
               containerPort: 2181
               servicePort: 2181
@@ -59,11 +59,11 @@ spec:
               protocol: TCP
               containerPort: 2088
               servicePort: 2088
-	    - name: http-15
+            - name: http-15
               protocol: TCP
               containerPort: 2089
               servicePort: 2089
-	    - name: http-16
+            - name: http-16
               protocol: TCP
               containerPort: 2090
               servicePort: 2090
