@@ -8,8 +8,8 @@ namespace: 'maxbase-dev-springcloud-component'
 appVersion: 1.0.0
 admin:
   image:
-    repository: 'reg.cluster.local:8443/tools/otter:v4.2.18'
-    version: '1.0.0'
+    repository: 'reg.cluster.local:8443/tools/otter'
+    version: 'v4.2.18'
   container:
     port: ''
   service:
